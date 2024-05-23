@@ -5,8 +5,8 @@ const https = require('https');
 const fs = require('fs');
 
 const server = https.createServer({
-  key: fs.readFileSync('path/to/private-key.pem'),
-  cert: fs.readFileSync('path/to/certificate.pem')
+  key: fs.readFileSync('./private-key.pem'),
+  cert: fs.readFileSync('./certificate.pem')
 }, (req, res) => {
   
 });
